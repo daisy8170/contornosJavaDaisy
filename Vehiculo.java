@@ -2,7 +2,7 @@ public class Vehiculo {
     private String marca;
     private int año;
     
-    public Vehiculo(String marca, String modelo, int año) {
+    public Vehiculo(String marca,  int año) {
         this.marca = marca;
         this.año = año;
     }
@@ -14,10 +14,14 @@ public class Vehiculo {
     public String obtenerInformacion() {
         return marca + " " + " (" + año + ")";
     }
-}
 
+
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
-        Vehiculo miCoche = new Vehiculo("Toyota",  2020);
+        Vehiculo miCoche = new Vehiculo("Toyota", 2020);
         System.out.println(miCoche.obtenerInformacion());
         miCoche.acelerar();
     }
+}
